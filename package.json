@@ -1,0 +1,25 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "learnign rest api",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "sudeep",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "redis": "^3.0.2",
+    "redis-commander": "^0.7.0"
+  }
+}

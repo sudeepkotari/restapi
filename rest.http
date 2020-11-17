@@ -1,0 +1,77 @@
+GET http://localhost:3000/products
+
+### create product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+     "name":"iphone 9s",
+     "price":5999
+}
+
+### get product by id
+GET http://localhost:3000/products/5f602eb11b0af230a458237f
+
+### update product by id
+PATCH  http://localhost:3000/products/5f602eb11b0af230a458237f
+Content-Type: application/json
+
+{
+    "name":"i phone 8s",
+    "price":9999
+}
+
+### delete product by id
+DELETE  http://localhost:3000/products/5f602eb11b0af230a458237f
+
+### main route
+GET http://localhost:3000/
+
+### Query 
+GET http://localhost:3000/test?name=imac&price=1399
+
+### id 
+GET http://localhost:3000/fjsfhalf
+
+### body
+POST  http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=iMac&pric=4399
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email" : "sudeepkotari6@gmail.com",
+    "password": "123456780"
+}
+###
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email" : "sudeepkotari6@gmail.com",
+    "password": "123456780"
+}
+
+###
+GET  http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDExODEyNjIsImV4cCI6MTYwMTE4MTI5MiwiYXVkIjoiNWY3MDE1YjA2NjBjNDcwNDBjMTgzMmYxIiwiaXNzIjoidmlyYWxpdHQuY29tIn0.4t3bZOndDHxuqGz-OI_J6pLQIIEEH-zmr2GNiW79H5Q
+
+###
+POST http://localhost:3000/auth/refreshToken
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDExODExNzAsImV4cCI6MTYzMjczODc3MCwiYXVkIjoiNWY3MDE1YjA2NjBjNDcwNDBjMTgzMmYxIiwiaXNzIjoidmlyYWxpdHQuY29tIn0.2LUda2Df1CDc0v7SWzN60n6lr3FYafMrZvyyCB9E7ME"
+}
+
+###
+DELETE  http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDExODExOTQsImV4cCI6MTYzMjczODc5NCwiYXVkIjoiNWY3MDE1YjA2NjBjNDcwNDBjMTgzMmYxIiwiaXNzIjoidmlyYWxpdHQuY29tIn0.D7tZJK1PSMTV6fqBaXdjQaHoe3mzrhw0aJDb0p1HrQk"
+}
